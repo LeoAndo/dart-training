@@ -6,14 +6,18 @@ void main(List<String> arguments) {
 }
 
 void callAsyncFunc() async {
-  var value = await AsyncSample01().asyncFunc(name: "task01");
-  print(value);
+  try {
+    var value = await AsyncSample01().asyncFunc(name: "task01");
+    print(value);
 
-  var value2 = await AsyncSample01().asyncFunc(name: "task02");
-  print(value2);
+    var value2 = await AsyncSample01().asyncFunc(name: "task02");
+    print(value2);
 
-  var value3 = await AsyncSample01().asyncFunc(name: "task03");
-  print(value3);
+    var value3 = await AsyncSample01().asyncFunc(name: "task03");
+    print(value3);
+  } on Exception catch (_, e) {
+    print(e);
+  }
 }
 
 class AsyncSample01 {

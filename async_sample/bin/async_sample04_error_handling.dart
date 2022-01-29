@@ -1,6 +1,4 @@
-/// task01 : 2022-01-30 03:45:50.397027
-/// task02 : 2022-01-30 03:45:50.405890
-/// task03 : 2022-01-30 03:45:50.406035
+// Exception: Any error!!
 void main(List<String> arguments) {
   final tasks = [
     AsyncSample01().asyncFunc(name: "task01"),
@@ -17,7 +15,7 @@ void main(List<String> arguments) {
 class AsyncSample01 {
   Future<String> asyncFunc({required String name, int time = 1}) async {
     return Future.delayed(Duration(seconds: time), () {
-      return name + " : " + DateTime.now().toString();
+      throw Exception("Any error!!");
     });
   }
 }

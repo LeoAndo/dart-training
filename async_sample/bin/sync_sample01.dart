@@ -4,9 +4,13 @@ import 'dart:io';
 /// task02 : 2022-01-30 03:32:04.132922
 /// task03 : 2022-01-30 03:32:05.138220
 void main(List<String> arguments) {
-  print(SyncSample01().syncFunc(name: "task01"));
-  print(SyncSample01().syncFunc(name: "task02"));
-  print(SyncSample01().syncFunc(name: "task03"));
+  try {
+    print(SyncSample01().syncFunc(name: "task01"));
+    print(SyncSample01().syncFunc(name: "task02"));
+    print(SyncSample01().syncFunc(name: "task03"));
+  } on Exception catch (_, e) {
+    print(e);
+  }
 }
 
 class SyncSample01 {
