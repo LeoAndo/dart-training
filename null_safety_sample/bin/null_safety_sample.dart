@@ -1,3 +1,5 @@
 void main(List<String> arguments) {
-  print('Hello world!');
+  String? str1;
+  print(str1?.length);
+  print(str1?.length ?? "null!!!");
 }
