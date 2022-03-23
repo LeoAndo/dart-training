@@ -8,4 +8,13 @@ void main(List<String> arguments) {
     // RangeError (index): Invalid value: Not in inclusive range 0..3: 10
     print(e);
   }
+  print("==========================");
+
+  var n = 'Hello, '
+      'Dart!';
+  print(n); // Hello, Dart!
+
+  var nn = 'Hello, ' +
+      'Dart!'; // Use adjacent strings to concatenate string literals.
+  print(nn); // Hello, Dart!
 }
