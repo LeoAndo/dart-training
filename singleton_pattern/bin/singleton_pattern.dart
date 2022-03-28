@@ -2,7 +2,7 @@ import 'counter.dart';
 
 void main(List<String> arguments) {
   final counter = Counter();
-  // 100 loop.
+  // 10 loop.
   for (var i = 0; i < 10; i++) {
     counter.increment();
   }
