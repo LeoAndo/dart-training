@@ -2,7 +2,7 @@ class Person {
   final String _name;
   final int _age;
 
-  Person(this._name, this._age);
+  const Person(this._name, this._age);
 
   String get name => _name;
 
