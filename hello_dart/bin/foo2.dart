@@ -1,6 +1,6 @@
 class Foo2 {
-  int _x;
-  int _y;
+  final int _x;
+  final int _y;
 
   int get x => _x;
   int get y => _y;
