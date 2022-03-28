@@ -1,10 +1,6 @@
 class Person {
-  final String _name;
-  final int _age;
+  final String name;
+  final int age;
 
-  const Person(this._name, this._age);
-
-  String get name => _name;
-
-  int get age => _age;
+  const Person(this.name, this.age);
 }
