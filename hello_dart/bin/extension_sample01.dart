@@ -1,3 +1,5 @@
+import 'string_extension.dart';
+
 void main(List<String> arguments) {
   const name = "  yamada";
   print(name);
@@ -5,8 +7,4 @@ void main(List<String> arguments) {
   print(name.toLowerCase());
   print(name.trim());
   print(name.appendABC); //   yamadaABC
-}
-
-extension StringExtension on String {
-  String get appendABC => this + "ABC";
 }
